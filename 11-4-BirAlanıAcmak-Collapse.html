@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Bir alanı açmak Collapse</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>açılır bir alan</h1>
+        <h4><span class="label-warning" data-toggle="collapse" data-target="#uyari"> HATA DETAYI OKUMAK İÇİN TIKLAYIN...</span></h4>
+        <p>başka birşey</p>
+        <div id="uyari" class="collapse">
+            <div><p>hata detayları</p><ul><li>detay 1 </li><li>detay 2 </li></ul></div>
+        </div>
+        <br>
+        <h1>kapanır bir alan</h1>
+        <h4><span class="label-warning" data-toggle="collapse" data-target="#uyari1"> HATA DETAYI OKUMAK İÇİN TIKLAYIN...</span></h4>
+        <p>başka birşey</p>
+        <div id="uyari1" class="collapse in">
+            <div><p>hata detayları</p><ul><li>detay 1 </li><li>detay 2 </li></ul></div>
+        </div>
+    </div>
+</body>
+</html>

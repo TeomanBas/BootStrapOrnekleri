@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	  <script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	  <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Liste grupları</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- liste grupları-->
+        <ul class="list-group">
+            <li class="list-group-item">anasayfa</li>
+            <li class="list-group-item">hakkımızda</li>
+            <li class="list-group-item">iletişim</li>
+        </ul>
+        <hr>
+        <!-- rozetli liste grupları-->
+        <ul class="list-group">
+            <li class="list-group-item"><span class="badge"></span><img src="./img/home.png" width="15px" height="15px"> anasayfa</li>
+            <li class="list-group-item"><span class="badge"></span><img src="./img/hakkimizda.png" width="15px" height="15px"> hakkımızda</li>
+            <li class="list-group-item"><span class="badge"></span><img src="./img/iletisim.png" width="15px" height="15px"> iletişim</li>
+        </ul>
+        <hr>
+        <!-- liste elemanlarına link vermek ve aktif olanı belirlemek-->
+        <ul class="list-group">
+            <a href="#" class="list-group-item active"><span class="badge"></span><img src="./img/home.png" width="15px" height="15px"> anasayfa</a>
+            <a href="#" class="list-group-item"><span class="badge"></span><img src="./img/hakkimizda.png" width="15px" height="15px"> hakkımızda</a>
+            <a href="#" class="list-group-item"><span class="badge"></span><img src="./img/iletisim.png" width="15px" height="15px"> iletişim</a>
+        </ul>
+        <hr>
+        <!-- pasif liste satırı-->
+        <ul class="list-group">
+            <a href="#" class="list-group-item"><span class="badge"></span><img src="./img/home.png" width="15px" height="15px"> anasayfa</a>
+            <a href="#" class="list-group-item disabled"><span class="badge"></span><img src="./img/hakkimizda.png" width="15px" height="15px"> hakkımızda</a>
+            <a href="#" class="list-group-item"><span class="badge"></span><img src="./img/iletisim.png" width="15px" height="15px"> iletişim</a>
+        </ul>
+</body>
+</html>

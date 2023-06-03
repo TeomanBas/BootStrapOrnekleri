@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>tab sistemi açılır alanlar nav-tab</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#anasayfa">kitaplarım</a></li>
+            <li><a data-toggle="tab" href="#hakkimda">eğiitm setleri</a></li>
+            <li><a data-toggle="tab" href="#iletisim">iletişim bilgileri</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="anasayfa" class="tab-pane fade in active">
+            <h1>anasayfa içeriği</h1>
+            <p>anasayfa içeriği burada olacak</p>
+        </div>
+
+        <div id="hakkimda" class="tab-pane fade">
+        <h1>hakkimda içeriği</h1>
+        <p>hakkimda içeriği</p>
+        </div>
+
+        <div id="iletisim" class="tab-pane fade">
+            <h1>iletişim içeriği</h1>
+            <p>iletişim içeriği</p>
+        </div>
+    </div>
+</body>
+</html>

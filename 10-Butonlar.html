@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Butonlar</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Butonlar</h1>
+        <h2>Anlamsal buton stilleri</h2>
+            btn-default: varsayılan.Beyaz <button type="button" class="btn btn-default">varsayılan</button><br>
+            btn-primary: öncelikli.lacivert <button type="button" class="btn btn-primary">öncelikli</button><br>
+            btn-success: başarılı.yeşil <button type="button" class="btn btn-success">başarılı</button><br>
+            btn-info: bilgi.açık mavi <button type="button" class="btn btn-info">bilgi</button><br>
+            btn-warning: uyarı.turuncu <button type="button" class="btn btn-warning">uyarı</button><br>
+            btn-danger: tehlike.kırmızı <button type="button" class="btn btn-danger">tehlike</button><br>
+            btn-link: bağlantı.mavi renkli düz yazı <button type="button" class="btn btn-link">bağlantı</button><br>
+            <br><br>
+        <h2>Linkleri buton sili ile göstermek</h2>
+            <p>anchor etiketini butonlara çevirebiliriz bunun için class tanımlamasının yanın role tanımlaması yapmamız gerekir</p>
+            <a href="#" class="btn btn-info" role="button">ANASAYFA</a><br><br>
+        <h2>Butonları Pasif yapmak</h2>
+            <p>butonun tıklanmasını kapatmak için disabled özelliği class içine eklenir ve aktif active(varsayılan) eklenir
+            buton pasif yapılırsa silik görünür.
+            </p>
+            <a href="#" class="btn btn-info" role="button">kaydet</a> 
+            <a href="#" class="btn btn-danger btn-md disabled" role="button">sil</a><br><br>
+            <br><br>
+        <h2>Buton ölçüleri</h2>
+            <p>farklı ölçülerde butonlar oluşturulabilir bunlar grid sistemin oluşturulan ekran modlarına göre yapılır</p>
+            btn-lg:büyük    <a href="#" class="btn btn-info btn-lg" >buton</a> <br>
+            btn-md:normal   <a href="#" class="btn btn-info btn-md" >buton</a> <br>
+            btn-sm:küçük    <a href="#" class="btn btn-info btn-sm" >buton</a> <br>
+            btn-xs:en küçük <a href="#" class="btn btn-info btn-xs" >buton</a> <br>
+        <h2>Butonları bloklamak</h2>
+            <p>ekrana yatay olarak bloklanan butonlardır.genelde mobil web tasarımında kullanılır.</p>
+            <a href="#" class="btn btn-info btn-block" role="button">ANASAYFA</a>
+            <a href="#" class="btn btn-info btn-block" role="button">HAKKIMIZDA</a>
+            <a href="#" class="btn btn-info btn-block" role="button">İLETİŞİM</a>
+        <br><br><br>
+    </div>
+</body>
+</html>

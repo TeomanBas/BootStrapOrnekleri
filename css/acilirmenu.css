@@ -1,0 +1,19 @@
+body{
+    padding:10px;
+}
+@media (max-width:1200px){
+    div.btn-group{
+        display:inline
+    }
+    div.dropdown{
+        display:none;
+    }
+}
+@media (max-width:400px){
+    div.btn-group{
+        display:none;
+    }
+    div.dropdown{
+        display:inline;
+    }
+}

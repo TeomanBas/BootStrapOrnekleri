@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	  <script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	  <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Grid sistemi</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>bootstrap grid sistemi</h1>
+        <br>
+        <img src="./img/gridsistemi.png" alt="">
+        <br>
+        <p>12 adet yatay olacak şekilde div sıralama sistemi vardır her div için kaç adet alan kaplayacağı 
+            kaçıncı dilimden başlayacağını belirtebiliriz
+        </p>
+        <h2>ızgara şeması</h2>
+        <br>
+        <img src="./img/izgarasistemi.webp" alt="">
+        <p>grid sistemi kullanılırken dikkat edilmesi gereken en önemli konulardan 
+            birisi fixed(container) mı yoksa fluid(container-fuid) tasarımmı yapacağımızdır.
+        </p>
+        <h2>ızgara yapı şablonu</h2>
+        <p>ızgara oluştururken table mantığı ile divler oluşturulur</p>
+        <!--
+        <div class="row">
+            <div class="col-*-*"></div>
+        </div>
+        <div class="row">
+            <div class="col-*-*"></div>
+            <div class="col-*-*"></div>
+        </div>
+        <div class="row">
+            <div class="col-*-*"></div>
+        </div>
+        -->
+        <img src="./img/table-div-yapisi.png" alt="">
+        <p>row değerleri görüldüğü gibi kullanılırken *-* olan col kısımlarında farklı parametreler 
+            kullanılmaktadır.
+        </p>
+        <br>
+        <h2>ızgara sınıfları ve keran modelinin belirlenmesi</h2>
+        <p>row ile satırın col-*-* ile (* tanımının yerine başka tanımlar gelecek) satırların tanımlandığını biliyoruz şimdi * 
+            değerlerinin ne olacağı ve ne gibi etkiler var bunları inceliyor olacağız.
+        </p>
+        <p>bootstrapta 4 farklı ekran modeli yer alır bunlar telefon xs(xsmall), tablet sm(small), dizüstü md(medium), masaüstü lg(large), daha büyük ekranlar için xl(x large) tanımlamaları vardır
+            eğer ekran çözünürlüğü belirli aralıkların altında yada üstündeyse kolonlarda kaydırmalar yapılır
+        </p>
+        <br>
+        <img src="./img/ekran-modeli.webp" alt="">
+        <img src="./img/ekran-modeli-1.webp" alt="">
+        <br>
+        <img src="./img/ekran-modeli-2.webp" alt="">
+        <p>yapacağımız tasarımlara göre bu tanımlardan birini seçmemiz gerekmetedir.</p>
+    </div>
+</body>
+</html>

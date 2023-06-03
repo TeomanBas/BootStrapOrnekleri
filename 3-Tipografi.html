@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Tipografi</title>
+</head>
+<body>
+    <!--<div class="container">-->
+    <div class="container-fluid">
+        <!-- <h1-6> -->
+            <h1>h1 BAŞLIK <small> bootstrap-3 BAŞLIK</small></h1><br>
+            <h6>h6 BAŞLIK <small> bootstrap-3 BAŞLIK</small></h6><br>
+        <hr>
+        <!-- <mark> -->
+            burada <mark>MARK</mark> ile işaretlemiş metin vardır<br>
+        <hr>
+        <!-- <abbr> -->
+            <abbr title="www.google.com">Google</abbr>
+        <hr>
+        <!-- <blockquote> -->
+            <blockquote>burası girintili bir metin yapısıdır bootstrap ile şekillendirilmiştir.
+                blockquote agenelde alıntı veya vurgu yapılan metinler için kullanılır</blockquote>
+        <hr>
+        <!-- <dl>,<dt>,<dd> Listeleme -->
+            <dl><h4>ALINACAKLAR LİSTESİ</h4>
+                <dt>MARKET</dt>
+                    <dd>EKMEK</dd>
+                    <dd>SÜT</dd>
+                <dt>MANAV</dt>
+                    <dd>DOMATES</dd>
+                    <dd>BİBER</dd>
+            </dl>
+        <hr>
+        <!-- <code> genelde kod göstermek için kullanılır -->
+            <code> int a 10;
+                if (a%2==0)
+                    console.writeline("çift");
+                else
+                    console.writeline("tek");</code>
+        <hr>
+        <!-- <kbd> klavye kısayollarını belirtmek için kullanılır -->
+            <kbd> Alt + F4 </kbd>
+        <hr>
+        <!-- <pre> gri renki köşeleri yuvarlatılmış bir kutu oluşturur. -->
+            <pre>yuvarlatılmış uzun bir kutu oluşur aynı zamanda pre code etiketine benzer içerisine yazılan kodlar aynen olduğu gibi gözükür html kodları hariç
+               
+                int a 10;
+                if (a%2==0)
+                    console.writeline("çift");
+                else
+                    console.writeline("tek");
+            </pre>
+        <hr>
+        <!-- anlamsal yazı renkleri -->
+            <p class="text-muted">kapalı metin yazısı</p>
+            <p class="text-primary">önemli yazı</p>
+            <p class="text-success">başarı yazısı</p>
+            <p class="text-info">bilgi yazısı</p>
+            <p class="text-warning">uyarı yazısı</p>
+            <p class="text-danger">tehlike yazısı</p>
+        <hr>
+        <!-- anlamsal yazı arka plan renkleri -->
+            <p class="bg-primary">önemli yazı</p>
+            <p class="bg-success">başarı yazısı</p>
+            <p class="bg-info">bilgi yazısı</p>
+            <p class="bg-warning">uyarı yazısı</p>
+            <p class="bg-danger">tehlike yazısı</p>
+        <hr>
+        <!-- bootstapta kullanılan üç farklı başlık stili vardır bunlar dışa başlık,içe başlık ve altı çizili başlıklardır.
+             jumbotron isim verilen kutulardır. -->
+
+             <!-- dışa başlık-->
+            <div class="container-fluid">
+                <div class="jumbotron">
+                    <h3>DIŞA BAŞLIK</h3>
+                </div>
+                <div>
+                    içerik
+                </div>
+            </div>
+        <br>
+            <!-- içe başlık-->
+            <div>
+                <div class="jumbotron">
+                    <h3>İÇE BAŞLIK</h3></div>
+            <div class="container-fluid">
+                <div>
+                    içerik
+                </div>
+            </div>
+        <br>
+            <!-- altı çizili başlık-->
+        <div class="container-fluid">
+            <div class="page-header">
+                <h3>ALTI ÇİZİLİ BAŞLIK</h3>
+            </div>
+            <div>
+                içerik
+            </div>
+        </div>
+        <hr>
+
+        <!-- uyarılar :uyarı şeklinde kutular oluşturulabilir ve içerisinde içerik göstermemizi sağlayabiliriz
+             ve kapatılabilir ve kapatılamaz şeklinde ayarlanabilirler-->
+            
+             <div class="alert alert-success">
+                <strong>
+                    BAŞARILI!
+                </strong>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>
+                    BİLGİ
+                </strong>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>
+                    UYARI!
+                </strong>
+            </div>
+
+            <div class="alert alert-danger">
+                <strong>
+                    TEHLİKE!
+                </strong>
+            </div>
+         <hr>
+        <!-- kapatılabilir uyarı kutuları -->
+        <div class="alert alert-danger">
+            <a href="#" class="close" data-dismis="alert" aria-label="close">&times;</a>
+            <strong>UYARI!</strong>
+        </div>
+    </div>
+</body>
+</html>

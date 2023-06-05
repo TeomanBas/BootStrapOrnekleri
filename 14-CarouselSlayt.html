@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Carousel Slayt</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="slayt" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slayt" data-slide-to="1" class="active"></li>
+                <li data-target="#slayt" data-slide-to="2"></li>
+                <li data-target="#slayt" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./img/manzara-1.jpg">
+                    <div class="carousel-caption">
+                        <h2><b>Resim 1</b></h2>
+                        <h4>resim 1 in açıklamaları</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/manzara-2.jpg" alt=>
+                    <div class="carousel-caption">
+                        <h2><b>Resim 2</b></h2>
+                        <h4>resim 2 in açıklamaları</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/manzara-3.jpg">
+                    <div class="carousel-caption">
+                        <h2><b>Resim 3</b></h2>
+                        <h4>resim 3 in açıklamaları</h4>
+                    </div>
+                </div>
+            </div>
+            <a href="#slayt" class="left carousel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a href="#slayt" class="right carousel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

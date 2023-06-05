@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="./lib/jquery/jquery-3.7.0.min.js"></script>
+	<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <title>Duyarlı Formlar</title>
+</head>
+<body>
+    <script>
+        // checkbox seçimini alert veren jquery kodları
+        $(document).ready(function(){
+            $("#kosmak").on("click",function(){
+                if(kosmak.checked){
+                    alert("koşmayı seçtiniz");
+                }else{
+                    alert("koşmayı iptal ettiniz");
+                }
+            });
+            $("#yuzmek").on("click",function(){
+                if(yuzmek.checked){
+                    alert("yüzmeyi seçtiniz");
+                }else{
+                    alert("yüzmeyi iptal ettiniz");
+                }
+            });
+        });
+        // radio button seçimini alert veren jquery kodları
+        $(document).ready(function(){
+            $("#erkek").click(function(){
+                alert("cinsiyetiniz erkek");
+            });
+            $("#kadın").click(function(){
+                alert("cinsiyetiniz kadın");
+            });
+
+        //liste içerisinden seçilen değeri alert eden jquery kodları
+        $(document).ready(function(){
+            $('#liste').change(function(){
+                alert($('#liste option:checked').text());
+            })
+        })
+        });
+    </script>
+    <div class="container-fluid">
+        <form action="" role="form" method="POST">
+            <div class="form-group">
+                <label for="kullaniciadi">Kullanıcı Adı</label>
+                <input type="text" class="form-control" id="kullaniciadi">
+            </div>
+            <div class="form-group">
+                <label for="email">Mail adresi</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="mesaj">Mesajınız</label>
+                <textarea type="textarea" class="form-control" id="mesaj" row="3" placeholder="Mesajınızı giriniz">Mesajınızı Giriniz</textarea>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Şifre</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <!--checkbox kök bir div içerisinde tanımlanmalıdır birden çok seçim için kullanılır.-->
+            <div class="checkbox">
+                <label><input type="checkbox" id="kosmak">Koşmak</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="yuzmek">Yüzmek</label>
+            </div>
+            <div class="radio-inline">
+                <label for=""><input type="radio" name="cinsiyet" value="erkek" id="erkek">erkek</label>
+            </div>
+            <div class="radio-inline">
+                <label for=""><input type="radio" name="cinsiyet" value="kadın" id="kadın">kadın </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">saç renginiz nedir?</label>
+                <select name="" id="liste" class="form-control">
+                    <option value="">sarı</option>
+                    <option value="">siyah</option>
+                    <option value="">kahverengi</option>
+                    <option value="">kumral</option>
+                    <option value="">beyaz</option>
+                </select>
+            </div>
+            <div id="dropdown-toggle"></div>
+            <div class="form-group">
+                <label for="">hangi dilleri biliyorsunuz?</label>
+                <select multiple id="diller" class="form-control">
+                    <option value="">ingilizce</option>
+                    <option value="">almanca</option>
+                    <option value="">rusça</option>
+                    <option value="">fransızca</option>
+                    <option value="">italyanca</option>
+                </select>
+            </div>
+            <div id="dropdown-toggle"></div>
+            <button type="submit" class="btn btn-default" name="submit" type="submit">Giriş</button>
+        </form>
+    </div>
+</body>
+</html>
